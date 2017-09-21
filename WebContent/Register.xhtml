@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Register</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h3>Register</h3>
+		<h:outputText value="First Name" />
+		<h:inputText id="firstname" value="#{Register.firstName}"></h:inputText>
+		<h:message for="firstname"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Last Name" />
+		<h:inputText id="lastname" value="#{Register.lastName}"></h:inputText>
+		<h:message for="Last Name"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Address" />
+		<h:inputText id="address" value="#{Register.address}"></h:inputText>
+		<h:message for="First Name"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Phone No" />
+		<h:inputText id="phoneno" value="#{Register.phoneNo}"></h:inputText>
+		<h:message for="Phone No"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Email" />
+		<h:inputText id="email" value="#{Register.email}"></h:inputText>
+		<h:message for="Email id"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="User Name" />
+		<h:inputText id="username" value="#{Register.userName}"></h:inputText>
+		<h:message for="User Name"></h:message>
+		<br></br><br></br>
+		
+		<h:outputText value="Password" />
+		<h:inputText id="password" value="#{Register.password}"></h:inputText>
+		<h:message for="Password"></h:message>
+		<br></br><br></br>
+		
+		<h:commandButton action="#{Register.validateRegister}"
+			value="Submit"></h:commandButton>
+	</h:form>
+</h:body>
+</html>
