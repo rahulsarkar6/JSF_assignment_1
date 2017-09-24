@@ -25,49 +25,49 @@
 					
 					<div class="form-group">
 					<h:outputText value="First Name" styleClass="control-label col-sm-2"/>
-					<input type="text" id="firstname" value="#{Register.firstName}" styleClass="form-control" required="true" requiredMessage="Enter your first name"></input>
+					<h:inputText id="firstname" value="#{Register.firstName}" styleClass="form-control" required="true" requiredMessage="Enter your first name"></h:inputText>
 					<h:message for="firstname"></h:message>
 					</div>
 					
 					
 					<div class="form-group">
 					<h:outputText value="Last Name" styleClass="control-label col-sm-2"/>
-					<input type="text" id="lastname" value="#{Register.lastName}" styleClass="form-control" required="true" requiredMessage="Enter Last name"></input>
+					<h:inputText id="lastname" value="#{Register.lastName}" styleClass="form-control" required="true" requiredMessage="Enter Last name"></h:inputText>
 					<h:message for="lastname"></h:message>
 					</div>
 				
 					
 					<div class="form-group">
 					<h:outputText value="Address" styleClass="control-label col-sm-2"/>
-					<input type="text" id="address" value="#{Register.address}" styleClass="form-control" required="true" requiredMessage="Enter address"></input>
+					<h:inputText id="address" value="#{Register.address}" styleClass="form-control" required="true" requiredMessage="Enter address"></h:inputText>
 					<h:message for="address"></h:message>
 					</div>
 					
 					
 					<div class="form-group">
 					<h:outputText value="Phone No" styleClass="control-label col-sm-2"/>
-					<input type="number" id="phoneno" maxlength="10" value="#{Register.phoneNo}" styleClass="form-control" required="true" requiredMessage="Enter phone no"></input>
+					<h:inputText id="phoneno" value="#{Register.phoneNo}" styleClass="form-control" required="true" requiredMessage="Enter phone no"></h:inputText>
 					<h:message for="phoneno" ></h:message>
 					</div>
 					
 					
 					<div class="form-group">
 					<h:outputText value="Email" styleClass="control-label col-sm-2"/>
-					<input type="email" id="email" pattern="[+-%._0-9a-zA-Z]+@[.-a-zA-Z0-9]+\.[a-zA-Z]{2,3}" value="#{Register.email}" styleClass="form-control" required="true" requiredMessage="Enter email id"></input>
+					<h:inputText id="email" value="#{Register.email}" styleClass="form-control" required="true" requiredMessage="Enter email id"></h:inputText>
 					<h:message for="email"></h:message>
 					</div>
 					
 					
 					<div class="form-group">
 					<h:outputText value="Username" styleClass="control-label col-sm-2"/>
-					<input type="text" id="username" value="#{Register.userName}" styleClass="form-control" required="true" requiredMessage="Enter username"></input>
+					<h:inputText id="username" value="#{Register.userName}" styleClass="form-control" required="true" requiredMessage="Enter username"></h:inputText>
 					<h:message for="username"></h:message>
 					</div>
 					
 					
 					<div class="form-group">
 					<h:outputText value="Password" styleClass="control-label col-sm-2"/>
-					<input type="text" id="password" value="#{Register.password}" styleClass="form-control" required="true" requiredMessage="Enter password"></input>
+					<h:inputText id="password" value="#{Register.password}" styleClass="form-control" required="true" requiredMessage="Enter password"></h:inputText>
 					<h:message for="password"></h:message>
 					</div>
 					
