@@ -67,10 +67,13 @@ public class Register implements Serializable {
 	
 	public String validateRegister() {
 		
-		if(firstName.isEmpty() || lastName.isEmpty() || address.isEmpty() || phoneNo.isEmpty() || email.isEmpty() || userName.isEmpty() || password.isEmpty()) {
+		
+		if (phoneNo.length()!=10) {
 			
-			return "error1";
+			return "error2";
+		
 		}
+		
 		else {
 			
 			return "success1";
