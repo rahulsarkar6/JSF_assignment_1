@@ -4,47 +4,83 @@
 	xmlns:h="http://java.sun.com/jsf/html">
 <h:head>
 	<title>Register</title>
+	
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<h:outputStylesheet library="css" name="bootstrap.min.css"></h:outputStylesheet>
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.css"></link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"></link>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	
+	
+	
 </h:head>
 <h:body>
-	<h:form>
-		<h3>Register</h3>
-		<h:outputText value="First Name" />
-		<h:inputText id="firstname" value="#{Register.firstName}"></h:inputText>
-		<h:message for="firstname"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="Last Name" />
-		<h:inputText id="lastname" value="#{Register.lastName}"></h:inputText>
-		<h:message for="Last Name"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="Address" />
-		<h:inputText id="address" value="#{Register.address}"></h:inputText>
-		<h:message for="First Name"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="Phone No" />
-		<h:inputText id="phoneno" value="#{Register.phoneNo}"></h:inputText>
-		<h:message for="Phone No"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="Email" />
-		<h:inputText id="email" value="#{Register.email}"></h:inputText>
-		<h:message for="Email id"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="User Name" />
-		<h:inputText id="username" value="#{Register.userName}"></h:inputText>
-		<h:message for="User Name"></h:message>
-		<br></br><br></br>
-		
-		<h:outputText value="Password" />
-		<h:inputText id="password" value="#{Register.password}"></h:inputText>
-		<h:message for="Password"></h:message>
-		<br></br><br></br>
-		
-		<h:commandButton action="#{Register.validateRegister}"
-			value="Submit"></h:commandButton>
-	</h:form>
+	<div class="container" align="center">
+		<div class="col-sm-10" style="width: 600px; margin-left: 250; margin-top:20px">
+			<div class="jumbotron">
+
+				<h:form styleClass="form-horizontal">
+					<h3>Register</h3>
+					
+					<div class="form-group">
+					<h:outputText value="First Name" styleClass="control-label col-sm-2"/>
+					<h:inputText id="firstname" value="#{Register.firstName}" styleClass="form-control" required="true" requiredMessage="Enter your first name"></h:inputText>
+					<h:message for="firstname"></h:message>
+					</div>
+					
+					
+					<div class="form-group">
+					<h:outputText value="Last Name" styleClass="control-label col-sm-2"/>
+					<h:inputText id="lastname" value="#{Register.lastName}" styleClass="form-control" required="true" requiredMessage="Enter your last name"></h:inputText>
+					<h:message for="Last Name"></h:message>
+					</div>
+				
+					
+					<div class="form-group">
+					<h:outputText value="Address" styleClass="control-label col-sm-2"/>
+					<h:inputText id="address" value="#{Register.address}" styleClass="form-control" ></h:inputText>
+					<h:message for="First Name"></h:message>
+					</div>
+					
+					
+					<div class="form-group">
+					<h:outputText value="Phone No" styleClass="control-label col-sm-2"/>
+					<h:inputText id="phoneno" value="#{Register.phoneNo}" styleClass="form-control" ></h:inputText>
+					<h:message for="Phone No"></h:message>
+					</div>
+					
+					
+					<div class="form-group">
+					<h:outputText value="Email" styleClass="control-label col-sm-2"/>
+					<h:inputText id="email" value="#{Register.email}" styleClass="form-control" ></h:inputText>
+					<h:message for="Email id"></h:message>
+					</div>
+					
+					
+					<div class="form-group">
+					<h:outputText value="User Name" styleClass="control-label col-sm-2"/>
+					<h:inputText id="username" value="#{Register.userName}" styleClass="form-control"></h:inputText>
+					<h:message for="User Name"></h:message>
+					</div>
+					
+					
+					<div class="form-group">
+					<h:outputText value="Password" styleClass="control-label col-sm-2"/>
+					<h:inputText id="password" value="#{Register.password}" styleClass="form-control" ></h:inputText>
+					<h:message for="Password"></h:message>
+					</div>
+					
+					
+					<h:commandButton action="#{Register.validateRegister}"
+						class="btn btn-primary" value="Submit"></h:commandButton>
+				</h:form>
+			</div>
+		</div>
+	</div>
+			
+			
+			
+			
 </h:body>
 </html>

@@ -13,6 +13,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 	
 	
+	
 </h:head>
 <h:body>
 	<div class="container" align="center">
@@ -20,27 +21,27 @@
 			<div class="jumbotron">
 			
 						
-							<h:form styleClass="form-horizontal">
+							<h:form styleClass="form-horizontal" name="myForm" onsubmit="return validateForm()">
 								<h3>Login</h3>
 								<div class="form-group">
 								<h:outputText value="Username" styleClass="control-label col-sm-2" />
-								<h:inputText id="username" value="#{Login.user}" styleClass="form-control"></h:inputText>
+								<h:inputText id="username" value="#{Login.user}" styleClass="form-control" required="true" requiredMessage="Please enter username"></h:inputText>
 								<h:message for="username"></h:message>
 								</div>
-								<br></br><br></br>
+								
 								
 								<div class="form-group">
 								<h:outputText value="Password" styleClass="control-label col-sm-2"/>
-								<h:inputSecret id="password" value="#{Login.pwd}" styleClass="form-control"></h:inputSecret>
+								<h:inputSecret id="password" value="#{Login.pwd}" styleClass="form-control" required="true" requiredMessage="Please enter password"></h:inputSecret>
 								<h:message for="password"></h:message>
 								</div>
-								<br></br><br></br>
+								<br></br>
 								
 								<h:commandButton action="#{Login.validateUsernamePassword}"
 									class="btn btn-primary" value="Login"></h:commandButton>
 							</h:form>
 							
-							<tr align="right">If not registered <a href="Reg.jsp">Click Here</a></tr>	
+							<tr align="right">If not registered <a href="Register.xhtml">Click Here</a></tr>	
 					
 				</div>	
 			</div>		
